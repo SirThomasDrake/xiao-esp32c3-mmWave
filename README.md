@@ -14,7 +14,7 @@
 >This can also be used with XIAO ESP32C6, just be sure to define the board and select the correct variant in your YAML script.
 
 #
-
+<a name="YAML"></a>
 ## YAML
 ```
 # Board: Seeed XIAO ESP32C3 (Seeed Studio)
@@ -99,3 +99,5 @@ There's several ways to do this, including using a serial adapter to communicate
 Download the app on [Google Play](https://play.google.com/store/apps/details?id=com.hlk.hlkradartool&pcampaignid=web_share)
 
 Or the [App Store](https://apps.apple.com/us/app/hlkradartool/id1638651152)
+
+Rename the sensor to the room you're using it in, and set a baseline for an empty room by selecting "Engineering Mode" and then press the "Auto" to set the levels of the room. The sensor has 8 gates for both Moving and Stationary Targets. Below those you will find the Detection Range [(called Distance in the YAML)](#YAML) There's a lot of other things you can do like limit the range of the sensor or how much distance in "Settings".
