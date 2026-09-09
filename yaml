@@ -1,0 +1,67 @@
+# Board: Seeed XIAO ESP32C3 (Seeed Studio)
+# Definition: definitions/boards/seeed-xiao-esp32c3/manifest.yaml # define your board
+
+esphome:
+  name: # your-sensor-name
+  friendly_name: # Your Sensor Name
+
+esp32:
+  variant: esp32c3 # choose your variant
+  flash_size: 4MB
+  framework:
+    type: esp-idf
+
+logger:
+  level: WARN
+  baud_rate: 0
+
+api:
+  encryption:
+    key:
+
+ota:
+  - platform: esphome
+
+wifi:
+  ssid: # ADD YOUR WIFI HERE
+  password: # ADD YOUR WIFI PASSWORD HERE
+  ap:
+    ssid: 
+    password:
+
+captive_portal:
+
+uart:
+  id: ld2410_uart
+  tx_pin: GPIO21    # Xiao TX → LD2410 RX
+  rx_pin: GPIO20    # Xiao RX → LD2410 TX
+  baud_rate: 256000
+  parity: NONE
+  stop_bits: 1
+  rx_buffer_size: 1024
+
+ld2410:
+  uart_id: ld2410_uart
+
+switch:
+  - platform: ld2410
+    engineering_mode:
+      name: Engineering Mode
+sensor:
+  - platform: ld2410
+    light:
+      name: "Light Sensor"
+      id: light_sensor # must use underscores
+
+  - moving_distance:
+      name: "Distance Sensor"
+      id: distance_sensor
+
+binary_sensor:
+  - platform: ld2410
+    has_target:
+      name: "Presence"
+    has_moving_target:
+      name: "Moving Target"
+    has_still_target:
+      name: "Still Target"
