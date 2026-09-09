@@ -100,4 +100,4 @@ Download the app on [Google Play](https://play.google.com/store/apps/details?id=
 
 Or the [App Store](https://apps.apple.com/us/app/hlkradartool/id1638651152)
 
-Rename the sensor to the room you're using it in, and set a baseline for an empty room by selecting "Engineering Mode" and then press the "Auto" to set the levels of the room. The sensor has 8 gates for both Moving and Stationary Targets. Below those you will find the Detection Range [(called Distance in the YAML)](#YAML) There's a lot of other things you can do like limit the range of the sensor or how much distance in "Settings".
+Rename the sensor to the room you're using it in, and set a baseline for an empty room by selecting "Engineering Mode" and then press the "Auto" to set the levels of the room. The sensor has 8 gates for both Moving and Stationary Targets. Below those you will find the Detection Range [(called Distance in the YAML)](#YAML) and the Photo sensitivity [(called Light in the YAML)](#YAML). There's a lot of other things you can do like limit the range of the sensor or how much distance is in between is measured between each gate in "Settings".
