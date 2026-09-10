@@ -1,6 +1,6 @@
 # XIAO ESP32C3 mmWave Motion Sensor
 ## For use with ESPHome using the Hi-Link LD2410C mmWave motion sensor, includes YAML for enabling Engineering Mode and wiring instructions.
-<img width="800" height="800" alt="esp32c6 pin layout" src="https://github.com/user-attachments/assets/d4cbb920-8687-469f-b6a4-5eaacbc53eb6" />
+<img width="906" height="532" alt="c3" src="https://github.com/user-attachments/assets/ce62fba6-6257-4440-950a-dfd1f8ba9375" />
 
 <img width="500" height="500" alt="ld2410c" src="https://github.com/user-attachments/assets/2c20171d-88be-4470-a118-fbb26fbcd7f1" />
 
